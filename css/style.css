@@ -135,6 +135,10 @@ content a {
     width: 100%;
     height: 100%;
     display: block;
+    -moz-transform: scale(1.25, 1.25);
+    -webkit-transform: scale(1.25, 1.25);
+    -o-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
 }
 #social {
     width: 100%;
@@ -189,10 +193,19 @@ h2 {
     display: flex;
     margin: 5px;
     border-radius: 5px;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
 }
 .item:hover {
     border-bottom: 2px solid #121c8d;
     border-radius: 0px;
+    -moz-transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
 }
 .item:hover .title {
     color: #6470ff;
