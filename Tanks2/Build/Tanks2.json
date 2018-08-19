@@ -1,9 +1,9 @@
 {
 "companyName": "DefaultCompany",
 "productName": "Tanks2!",
-"dataUrl": "Tanks2.data.unityweb",
-"wasmCodeUrl": "Tanks2.wasm.code.unityweb",
-"wasmFrameworkUrl": "Tanks2.wasm.framework.unityweb",
+"dataUrl": "Tank2.data.unityweb",
+"wasmCodeUrl": "Tank2.wasm.code.unityweb",
+"wasmFrameworkUrl": "Tank2.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
