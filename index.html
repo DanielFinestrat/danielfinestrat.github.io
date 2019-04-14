@@ -5,11 +5,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom_particles.css" />
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
+			<div id="particles-js"></div>
 			<div id="main">
 				<header id="header">
 					<div id="avatar_container">
@@ -33,5 +35,7 @@
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
+		<script src="assets/js/particles.min.js"></script>
+		<script src="assets/js/custom_particles.js"></script>
 	</body>
 </html>
