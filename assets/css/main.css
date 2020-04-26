@@ -18,15 +18,15 @@ body
 
 .icon
 {
-	text-decoration: none;
 	font-family: FontAwesome;
+	text-decoration: none;
 }
 
 #main
 {
 	height: 100%;
-	position: fixed;
 	left: 0;
+	position: fixed;
 	text-align: center;
 	top: 0;
 	width: 100%;
@@ -46,6 +46,7 @@ body
 	-webkit-animation: content 0.5s 0.5s forwards;
 	-ms-animation: content 0.5s 0.5s forwards;
 	animation: content 0.5s 0.5s forwards;
+	
 	display: inline-block;
 	opacity: 0;
 	vertical-align: middle;
@@ -84,6 +85,7 @@ body
 	-webkit-animation: nav-icons 0.2s ease-in-out forwards;
 	-ms-animation: nav-icons 0.2s ease-in-out forwards;
 	animation: nav-icons 0.2s ease-in-out forwards;
+	
 	display: inline-block;
 	height: 5.5em;
 	line-height: 5.5em;
@@ -128,6 +130,7 @@ body
 	-webkit-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	
 	border-radius: 100%;
 	border: solid 1px;
 	display: block;
