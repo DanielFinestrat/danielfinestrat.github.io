@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600");
 @import url("font-awesome.min.css");
 @import url("animations.css");
 
 html
 {
-	background-color: yellow;
+	background-color: #FF3;
 }
 
 body
