@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Warsaw Calculator</title>
+		<style>
+			*
+			{
+				box-sizing: border-box;
+			}
+
+			h2, p, form
+			{
+				text-align: center;
+				border-radius: 5px;
+				padding: 20px;
+			}
+
+			p
+			{
+				border: 1px solid #ccc;
+			}
+
+			form
+			{
+				background-color: #f2f2f2;
+			}
+
+			label
+			{
+				padding: 12px 12px 12px 0;
+				font-weight: bold;
+			}
+
+			input
+			{
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				resize: vertical;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Warsaw Calculator</h2>
+
+		<form>
+			<label for="gfat">
+				Grams of Fat:
+			</label><br>
+			<input min=0 type="number" id="gfat" name="gfat" value="0" oninput="wcalc()">
+
+			<br><br>
+
+			<label for="gprotein">
+				Grams of Protein (only if large portions or no carbs):
+			</label><br>
+		  <input min=0 type="number" id="gprotein" name="gprotein" value="0" oninput="wcalc()">
+		</form>
+
+		<p>
+			<span id="fpu">0</span> FPU. Equivalent to <b><span id="ghc">0</span>g HC</b>. <br>
+			<b>Extend</b> the bolus over <b><span id="extendtime">0</span> hours</b>. <br>
+			Start bolus <b>1 to 2 hours after eating</b> depending on body and FPU.
+		</p>
+
+		<script>
+			function wcalc() {
+				var fatkcal = document.getElementById("gfat").value * 9;
+				var proteinkcal = document.getElementById("gprotein").value * 4;
+				var totalkcal = fatkcal + proteinkcal;
+				var fpu = totalkcal / 100;
+				var ghc = fpu * 10;
+				
+				var intfpu = Math.floor(fpu);
+				var extendtime = 0;
+				switch(intfpu) {
+					case 0:
+						extendtime = 0;
+					break;
+					case 1:
+						extendtime = 3;
+					break;
+					case 2:
+						extendtime = 4;
+					break;
+					case 3:
+						extendtime = 5;
+					break;
+					case 4:
+						extendtime = 8;
+					break;
+					default:
+						extendtime = 12;
+				}
+
+				document.getElementById("fpu").textContent = fpu;
+				document.getElementById("ghc").textContent = ghc;
+				document.getElementById("extendtime").textContent = extendtime;
+			}
+		</script>
+	</body>
+</html>
