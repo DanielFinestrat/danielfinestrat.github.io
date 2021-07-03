@@ -6,43 +6,49 @@
 			*
 			{
 				box-sizing: border-box;
+				vertical-align: middle;
 			}
 
 			h2, p, form
 			{
 				text-align: center;
-				border-radius: 5px;
+				border-radius: 25px;
 				padding: 20px;
 			}
 
 			p
 			{
 				border: 1px solid #ccc;
+				font-size: 5vw;
 			}
 
 			form
 			{
 				background-color: #f2f2f2;
+				padding: 72px;
 			}
 
 			label
 			{
-				padding: 12px 12px 12px 0;
+				font-size: 5vw;
+				padding: 72px 12px 12px 0;
 				font-weight: bold;
 			}
 
 			input
 			{
+				height: 200px;
 				width: 100%;
 				padding: 12px;
 				border: 1px solid #ccc;
-				border-radius: 4px;
+				border-radius: 15px;
 				resize: vertical;
+				font-size: 7vw;
 			}
 		</style>
 	</head>
 	<body>
-		<h2>Warsaw Calculator</h2>
+		<h2 style="font-size:10vw;">Warsaw Calculator</h2>
 
 		<form>
 			<label for="gfat">
@@ -53,15 +59,19 @@
 			<br><br>
 
 			<label for="gprotein">
-				Grams of Protein (only if large portions or no carbs):
+				Grams of Protein:
 			</label><br>
 		  <input min=0 type="number" id="gprotein" name="gprotein" value="0" oninput="wcalc()">
 		</form>
 
 		<p>
-			<span id="fpu">0</span> FPU. Equivalent to <b><span id="ghc">0</span>g HC</b>. <br>
-			<b>Extend</b> the bolus over <b><span id="extendtime">0</span> hours</b>. <br>
-			Start bolus <b>1 to 2 hours after eating</b> depending on body and FPU.
+			<span id="fpu">0</span> FPU. Equivalent to <span id="ghc">0</span>g HC.<br>
+			Extend the bolus over <span id="extendtime">0</span> hours.
+		</p>
+		<p>
+			Only count fat over 10g.<br>
+			Only count protein if large portions (~70g) or no carbs.<br>
+			Start bolus 1 to 2 hours after eating depending on body and FPU.
 		</p>
 
 		<script>
