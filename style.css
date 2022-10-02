@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600");
-@import url("font-awesome.min.css");
-@import url("animations.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
 
 html
 {
@@ -42,9 +41,6 @@ body
 
 #content
 {
-	-moz-animation: content 0.5s 0.5s forwards;
-	-webkit-animation: content 0.5s 0.5s forwards;
-	-ms-animation: content 0.5s 0.5s forwards;
 	animation: content 0.5s 0.5s forwards;
 	
 	display: inline-block;
@@ -81,9 +77,6 @@ body
 
 #content nav li
 {
-	-moz-animation: nav-icons 0.2s ease-in-out forwards;
-	-webkit-animation: nav-icons 0.2s ease-in-out forwards;
-	-ms-animation: nav-icons 0.2s ease-in-out forwards;
 	animation: nav-icons 0.2s ease-in-out forwards;
 	
 	display: inline-block;
@@ -206,5 +199,47 @@ body
 	body
 	{
 		font-size: 9pt;
+	}
+}
+
+@keyframes content
+{
+	0%
+	{
+		-moz-transform: translate3d(0,1em,0);
+		-webkit-transform: translate3d(0,1em,0);
+		-ms-transform: translate3d(0,1em,0);
+		transform: translate3d(0,1em,0);
+		opacity: 0;
+	}
+
+	100%
+	{
+		-moz-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+}
+
+@keyframes nav-icons
+{
+	0%
+	{
+		-moz-transform: translate3d(0,1em,0);
+		-webkit-transform: translate3d(0,1em,0);
+		-ms-transform: translate3d(0,1em,0);
+		transform: translate3d(0,1em,0);
+		opacity: 0;
+	}
+
+	100%
+	{
+		-moz-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		opacity: 1;
 	}
 }
