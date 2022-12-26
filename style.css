@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 
 body
 {
-	background-color: #FF3;
-	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #303841;
+	color: #aec8df;
+	font-family: 'Inconsolata', monospace;
 	font-size: 15pt;
 	letter-spacing: -0.025em;
 	line-height: 1.75em;
@@ -89,14 +90,14 @@ body
 #content nav a
 {
 	display: inline-block;
-	color: black;
+	color: #aec8df;
 }
 
 #content nav a:before
 {
 	transition: all 0.2s ease-in-out;
 	border-radius: 100%;
-	border: solid 1px;
+	border: solid 0px;
 	display: block;
 	font-size: 1.75em;
 	line-height: 2.5em;
@@ -126,6 +127,30 @@ body
 	body
 	{
 		font-size: 11pt;
+	}
+}
+
+@media screen and (max-width: 830px)
+{
+	body
+	{
+		font-size: 10pt;
+	}
+}
+
+@media screen and (max-width: 750px)
+{
+	body
+	{
+		font-size: 9pt;
+	}
+}
+
+@media screen and (max-width: 680px)
+{
+	body
+	{
+		font-size: 8pt;
 	}
 }
 
